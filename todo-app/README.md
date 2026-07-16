@@ -2,7 +2,7 @@
 
 A personal portfolio website built with **Next.js**, showcasing my projects, skills, and experience as a developer.
 
-🔗 **Live Site:** [your-portfolio-url.com](https://your-portfolio-url.com)
+🔗 **Live Site:** [your-portfolio-url.com]
 
 ## ✨ Features
 
