@@ -1,5 +1,14 @@
 "use client";
-
+import {
+  Avatar,
+  AvatarBadge,
+  AvatarFallback,
+  AvatarImage,
+} from "@/components/ui/avatar"
+import {
+  NativeSelect,
+  NativeSelectOption,
+} from "@/components/ui/native-select"
 import { useEffect, useState } from "react";
 
 type Task = {
@@ -62,6 +71,11 @@ export default function Home() {
       <div className="w-full max-w-lg">
         {/* Header */}
         <div className="flex items-end justify-between mb-8 border-b border-slate-200 pb-6">
+            <Avatar>
+              <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+              <AvatarFallback>CN</AvatarFallback>
+              <AvatarBadge className="bg-green-600 dark:bg-green-800" />
+            </Avatar>
           <div>
             <h1 className="text-3xl font-bold tracking-tight text-slate-900">
               Tasks
@@ -95,12 +109,20 @@ export default function Home() {
             placeholder="Add a new task"
             className="flex-1 bg-white border border-slate-300 rounded-lg px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition"
           />
+          
           <button
             type="submit"
             className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 rounded-lg transition"
           >
             Add
           </button>
+          <NativeSelect>
+      <NativeSelectOption value="">Select status</NativeSelectOption>
+      <NativeSelectOption value="todo">Todo</NativeSelectOption>
+      <NativeSelectOption value="in-progress">In Progress</NativeSelectOption>
+      <NativeSelectOption value="done">Done</NativeSelectOption>
+      <NativeSelectOption value="cancelled">Cancelled</NativeSelectOption>
+    </NativeSelect>
         </form>
 
 

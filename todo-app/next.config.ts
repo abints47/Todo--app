@@ -2,7 +2,7 @@
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
-  output: 'export', // Tells Next.js to export static HTML/CSS/JS
+  
   images: {
     unoptimized: true, // Required because GitHub Pages is static hosting
   },
