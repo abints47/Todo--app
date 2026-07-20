@@ -2,7 +2,7 @@
 
 A personal portfolio website built with **Next.js**, showcasing my projects, skills, and experience as a developer.
 
-🔗 **Live Site:** 
+🔗 **Live Site: https://todo-do-nextjs.netlify.app** 
 
 ## ✨ Features
 
